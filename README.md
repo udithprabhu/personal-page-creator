@@ -1,6 +1,7 @@
 # Personal Page Creator
 Python script to create customizable website intended for GitHub pages.
 
+Inspired by [Git Folio](https://github.com/imfunniee/gitfolio)
 
 ## Installing
 To install the package, run - 
