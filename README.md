@@ -57,7 +57,8 @@ Below is an example config file which uses are the available functions.
         "twitter": "twitter_handle",
         "bitbucket": "bitbucket_username"
     },
-    "side_background": "http://www.example.com/path/to/image.jpg"
+    "side_background": "http://www.example.com/path/to/image.jpg",
+    "cv_path": "path/to/cv.pdf"
 }
 ```
 
