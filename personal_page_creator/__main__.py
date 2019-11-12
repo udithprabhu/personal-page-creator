@@ -90,6 +90,10 @@ def run_init(args):
     with open("config.json", "w") as f: f.write(json.dumps(init_dict))
     print("Default config.json created")
 
+def _build_page_data(config):
+    page_data = {}
+    page_data.update({"title": config.get("title", "Personal Page")})
+    return page_data
 
 def run_build(args):
     print("Build started")
@@ -103,14 +107,14 @@ def run_build(args):
     
     username = config["username"]
     gh_service = GithubService(username, config)
-
+    page_data = _build_page_data(config)
     with open("index.html", "w") as f:
-        f.write(environment.get_template("index.template").render(data=gh_service))
+        f.write(environment.get_template("index.template").render(data=gh_service, page_data=page_data))
     
     print("Finished html")
 
     with open("style.css", "w") as f:
-        f.write(environment.get_template("style.template").render(data=gh_service))
+        f.write(environment.get_template("style.template").render(data=gh_service, page_data=page_data))
 
     print("Finished css")
     print("Build complete")
