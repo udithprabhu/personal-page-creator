@@ -43,6 +43,7 @@ ppc serve
 | excluded | Specify a list of repo names | The specified repos will not be included as part of the site|
 | side_background| URL | Image from the url will be used as side background of the site |
 | social | Dict will key and value | Used to give links to the user's profile,Currenty supports linkedin, bitbucket and twitter |
+| cv_path | URL or filename | Used to give download link to the user's cv ( Curriculum Vitae ) |
 
 ## Example 
 Below is an example config file which uses are the available functions.
@@ -62,7 +63,6 @@ Below is an example config file which uses are the available functions.
 
 ## TODO
 
-- Add resume download option
 - Config to add organization repo also
 - Add themes
 

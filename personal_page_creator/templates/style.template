@@ -5,6 +5,25 @@
     background-color: #070707;
 }
 
+.cv-download-container {
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+}
+
+.cv-download {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 25px;
+    color: black;
+    background-color: whitesmoke;
+}
+
+.cv-download-label {
+    display: inline-block;
+}
+
 
 html {
     height: 100%;
@@ -54,8 +73,9 @@ body {
     color: white;
     font-size: 140%;
     margin: 15px;
+    margin-left: 0px !important;
     font-family: "Poppins";
-
+    display: inline-block;
 }
 
 
